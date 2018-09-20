@@ -8,6 +8,8 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 
+@class CTONEPhoto;
+
 @protocol TJCameraViewDelegate <NSObject>
 
 //传出图片和图片名称，图片名称为时间戳生成的名称

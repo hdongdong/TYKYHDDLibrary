@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "TYKYHDDLibrary"
-  s.version      = "1.0.5"
+  s.version      = "1.0.6"
   s.summary      = "library for tyky"
 
   # This description is used to generate tags and improve search results.
@@ -94,7 +94,7 @@ Pod::Spec.new do |s|
   s.source_files  = "TYKYHDDLibrary/**"
   #s.exclude_files = "Classes/Exclude"
 
-  s.public_header_files = "TYKYHDDLibrary/TYKYLibrary.h"
+  #s.public_header_files = "TYKYHDDLibrary/TYKYLibrary.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -116,7 +116,7 @@ Pod::Spec.new do |s|
   #  Link your library with frameworks, or libraries. Libraries do not include
   #  the lib prefix of their name.
   #
-
+  s.frameworks = 'UIKit', 'MediaPlayer', 'AVFoundation'
   # s.framework  = "SomeFramework"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
