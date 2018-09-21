@@ -1,5 +1,5 @@
 
-//代码地址:https://github.com/hdongdong/TYKYLibrary.git
+//代码地址:https://github.com/hdongdong/TYKYHDDLibrary.git
 
 //自定义相册模块 包括多选、单选
 #import "CTPhotosNavigationViewController.h"
