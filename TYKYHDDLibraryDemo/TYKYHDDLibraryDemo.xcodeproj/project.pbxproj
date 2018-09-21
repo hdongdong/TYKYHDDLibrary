@@ -33,9 +33,6 @@
 		0B64A5702153C25100240367 /* CTAutoPositionScrollview.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B64A51F2153C25100240367 /* CTAutoPositionScrollview.m */; };
 		0B64A5712153C25100240367 /* CTSemaphoreGCD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B64A5222153C25100240367 /* CTSemaphoreGCD.m */; };
 		0B64A5722153C25100240367 /* CTDownloadWithSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B64A5232153C25100240367 /* CTDownloadWithSession.m */; };
-		0B64A5732153C25100240367 /* UIAlertController+CTAlertBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B64A5262153C25100240367 /* UIAlertController+CTAlertBlock.m */; };
-		0B64A5742153C25100240367 /* CTONEPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B64A5272153C25100240367 /* CTONEPhoto.m */; };
-		0B64A5752153C25100240367 /* CTSavePhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B64A5282153C25100240367 /* CTSavePhotos.m */; };
 		0B64A5762153C25100240367 /* CTPhotosConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B64A52D2153C25100240367 /* CTPhotosConfiguration.m */; };
 		0B64A5772153C25100240367 /* CTGroupTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B64A52F2153C25100240367 /* CTGroupTableViewCell.m */; };
 		0B64A5782153C25100240367 /* CTPHAssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B64A5312153C25100240367 /* CTPHAssetModel.m */; };
@@ -62,6 +59,9 @@
 		0B64A58D2153C25100240367 /* CTVersionAutoUpdate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B64A5592153C25100240367 /* CTVersionAutoUpdate.m */; };
 		0B64A58E2153C25100240367 /* CTTouchIDAuthorize.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B64A55A2153C25100240367 /* CTTouchIDAuthorize.m */; };
 		0B64A58F2153C25100240367 /* CTRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B64A55E2153C25100240367 /* CTRequest.m */; };
+		0B64A5962153D39800240367 /* UIAlertController+CTAlertBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B64A5932153D39800240367 /* UIAlertController+CTAlertBlock.m */; };
+		0B64A5972153D39800240367 /* CTSavePhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B64A5942153D39800240367 /* CTSavePhotos.m */; };
+		0B64A5982153D39800240367 /* CTONEPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B64A5952153D39800240367 /* CTONEPhoto.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,12 +109,6 @@
 		0B64A5222153C25100240367 /* CTSemaphoreGCD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTSemaphoreGCD.m; sourceTree = "<group>"; };
 		0B64A5232153C25100240367 /* CTDownloadWithSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTDownloadWithSession.m; sourceTree = "<group>"; };
 		0B64A5242153C25100240367 /* CTSemaphoreGCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTSemaphoreGCD.h; sourceTree = "<group>"; };
-		0B64A5262153C25100240367 /* UIAlertController+CTAlertBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+CTAlertBlock.m"; sourceTree = "<group>"; };
-		0B64A5272153C25100240367 /* CTONEPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTONEPhoto.m; sourceTree = "<group>"; };
-		0B64A5282153C25100240367 /* CTSavePhotos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTSavePhotos.m; sourceTree = "<group>"; };
-		0B64A5292153C25100240367 /* UIAlertController+CTAlertBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+CTAlertBlock.h"; sourceTree = "<group>"; };
-		0B64A52A2153C25100240367 /* CTONEPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTONEPhoto.h; sourceTree = "<group>"; };
-		0B64A52B2153C25100240367 /* CTSavePhotos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTSavePhotos.h; sourceTree = "<group>"; };
 		0B64A52D2153C25100240367 /* CTPhotosConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTPhotosConfiguration.m; sourceTree = "<group>"; };
 		0B64A52E2153C25100240367 /* CTPhotoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTPhotoManager.h; sourceTree = "<group>"; };
 		0B64A52F2153C25100240367 /* CTGroupTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTGroupTableViewCell.m; sourceTree = "<group>"; };
@@ -164,6 +158,12 @@
 		0B64A55C2153C25100240367 /* CTAutoRunLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTAutoRunLabel.h; sourceTree = "<group>"; };
 		0B64A55D2153C25100240367 /* TYKYLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYKYLibrary.h; sourceTree = "<group>"; };
 		0B64A55E2153C25100240367 /* CTRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTRequest.m; sourceTree = "<group>"; };
+		0B64A5902153D39800240367 /* CTONEPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTONEPhoto.h; sourceTree = "<group>"; };
+		0B64A5912153D39800240367 /* CTSavePhotos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTSavePhotos.h; sourceTree = "<group>"; };
+		0B64A5922153D39800240367 /* UIAlertController+CTAlertBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+CTAlertBlock.h"; sourceTree = "<group>"; };
+		0B64A5932153D39800240367 /* UIAlertController+CTAlertBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+CTAlertBlock.m"; sourceTree = "<group>"; };
+		0B64A5942153D39800240367 /* CTSavePhotos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTSavePhotos.m; sourceTree = "<group>"; };
+		0B64A5952153D39800240367 /* CTONEPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTONEPhoto.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,12 +304,12 @@
 		0B64A5252153C25100240367 /* CTOnePhoto */ = {
 			isa = PBXGroup;
 			children = (
-				0B64A5262153C25100240367 /* UIAlertController+CTAlertBlock.m */,
-				0B64A5272153C25100240367 /* CTONEPhoto.m */,
-				0B64A5282153C25100240367 /* CTSavePhotos.m */,
-				0B64A5292153C25100240367 /* UIAlertController+CTAlertBlock.h */,
-				0B64A52A2153C25100240367 /* CTONEPhoto.h */,
-				0B64A52B2153C25100240367 /* CTSavePhotos.h */,
+				0B64A5902153D39800240367 /* CTONEPhoto.h */,
+				0B64A5952153D39800240367 /* CTONEPhoto.m */,
+				0B64A5912153D39800240367 /* CTSavePhotos.h */,
+				0B64A5942153D39800240367 /* CTSavePhotos.m */,
+				0B64A5922153D39800240367 /* UIAlertController+CTAlertBlock.h */,
+				0B64A5932153D39800240367 /* UIAlertController+CTAlertBlock.m */,
 			);
 			path = CTOnePhoto;
 			sourceTree = "<group>";
@@ -454,7 +454,6 @@
 			files = (
 				0B64A5772153C25100240367 /* CTGroupTableViewCell.m in Sources */,
 				0B64A58E2153C25100240367 /* CTTouchIDAuthorize.m in Sources */,
-				0B64A5752153C25100240367 /* CTSavePhotos.m in Sources */,
 				0B64A5892153C25100240367 /* CTPreviewPhotosCollectionViewController.m in Sources */,
 				0B64A5822153C25100240367 /* CTCollectionModel.m in Sources */,
 				0B64A5722153C25100240367 /* CTDownloadWithSession.m in Sources */,
@@ -462,11 +461,11 @@
 				0B64A57D2153C25100240367 /* UIViewController+CTAlertShow.m in Sources */,
 				0B64A5642153C25100240367 /* CTImageScrollView.m in Sources */,
 				0B64A5842153C25100240367 /* CTPhotoManager.m in Sources */,
+				0B64A5962153D39800240367 /* UIAlertController+CTAlertBlock.m in Sources */,
 				0B64A4EC2153C21300240367 /* ViewController.m in Sources */,
 				0B64A58D2153C25100240367 /* CTVersionAutoUpdate.m in Sources */,
+				0B64A5972153D39800240367 /* CTSavePhotos.m in Sources */,
 				0B64A5612153C25100240367 /* CTLazyImageView.m in Sources */,
-				0B64A5732153C25100240367 /* UIAlertController+CTAlertBlock.m in Sources */,
-				0B64A5742153C25100240367 /* CTONEPhoto.m in Sources */,
 				0B64A56F2153C25100240367 /* KeychainTool.m in Sources */,
 				0B64A5852153C25100240367 /* PHAssetCollection+CTAssetCollectionManager.m in Sources */,
 				0B64A56E2153C25100240367 /* CTCustomCameraSuperViewController.m in Sources */,
@@ -474,6 +473,7 @@
 				0B64A56D2153C25100240367 /* CTAutoRunLabel.m in Sources */,
 				0B64A58B2153C25100240367 /* UIControl+CTControlBlock.m in Sources */,
 				0B64A5802153C25100240367 /* CTPhotosNavigationViewController.m in Sources */,
+				0B64A5982153D39800240367 /* CTONEPhoto.m in Sources */,
 				0B64A5832153C25100240367 /* CTBottomView.m in Sources */,
 				0B64A4F72153C21600240367 /* main.m in Sources */,
 				0B64A5712153C25100240367 /* CTSemaphoreGCD.m in Sources */,
