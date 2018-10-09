@@ -77,6 +77,7 @@ static id<CTSendPhotosProtocol>CTDelegate = nil;
     if (![CTSavePhotos checkAuthorityOfAblum]) {
         return;
     }
+    PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
     if (status == PHAuthorizationStatusNotDetermined){
         [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
             if (status == PHAuthorizationStatusAuthorized) {
