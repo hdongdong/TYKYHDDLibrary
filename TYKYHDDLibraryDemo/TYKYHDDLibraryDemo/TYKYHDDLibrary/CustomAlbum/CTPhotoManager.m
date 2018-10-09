@@ -77,12 +77,26 @@ static id<CTSendPhotosProtocol>CTDelegate = nil;
     if (![CTSavePhotos checkAuthorityOfAblum]) {
         return;
     }
-    //获得智能分组
-    PHFetchResult * smartGroups = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum subtype:PHAssetCollectionSubtypeAlbumRegular options:nil];
-    
-    [self filterGroup:smartGroups complete:^(NSArray<PHAssetCollection *>  * _Nonnull results) {
-        completeBlock(results);
-    }];
+    PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
+    if (status == PHAuthorizationStatusNotDetermined){
+        [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
+            if (status == PHAuthorizationStatusAuthorized) {
+                //获得智能分组
+                PHFetchResult * smartGroups = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum subtype:PHAssetCollectionSubtypeAlbumRegular options:nil];
+                
+                [self filterGroup:smartGroups complete:^(NSArray<PHAssetCollection *>  * _Nonnull results) {
+                    completeBlock(results);
+                }];
+            }
+        }];
+    }else{
+        //获得智能分组
+        PHFetchResult * smartGroups = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum subtype:PHAssetCollectionSubtypeAlbumRegular options:nil];
+        
+        [self filterGroup:smartGroups complete:^(NSArray<PHAssetCollection *>  * _Nonnull results) {
+            completeBlock(results);
+        }];
+    }
     
 }
 // 将configuration属性中的类别进行筛选
